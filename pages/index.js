@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
-import Featured from '../components/featured';
+import Featured from '../components/Featured';
 import PizzaList from '../components/PizzaList';
 import styles from '../styles/Home.module.css';
 
