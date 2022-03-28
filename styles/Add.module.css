@@ -1,0 +1,81 @@
+.wrapper {
+  background-color: white;
+  padding: 0.8rem 4rem;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.label {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.input {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSm {
+  width: 50%;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.extraItems {
+  margin: 0.8rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.extraItem {
+  margin: 0.8rem 0rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid tomato;
+  background-color: white;
+  color: tomato;
+  margin-right: 0.8rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.addButton,
+.extraButton {
+  width: 25%;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.4rem 0rem;
+  border-radius: 2rem;
+}
+
+.addButton:hover,
+.extraButton:hover {
+  background-color: green;
+}

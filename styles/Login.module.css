@@ -1,0 +1,42 @@
+.container {
+    height: calc(100vh - 6.25rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    height: 2rem;
+    margin-bottom: 1.25rem;
+    padding: 0rem 0.7rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #d1411e;
+}
+
+.input::placeholder {
+    color: white;
+    font-weight: 600;
+
+}
+
+.button {
+    height: 2.3rem;
+    margin-bottom: 1.25rem;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.error {
+    font-size: 0.9rem;
+    color:red
+}

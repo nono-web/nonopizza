@@ -1,0 +1,135 @@
+.container {
+  padding: 3rem;
+  display: flex;
+}
+
+.left {
+  flex: 2;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.row:last-child {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.undone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none;
+}
+
+.right {
+  flex: 1;
+}
+
+.wrapper {
+  width: 50%;
+  max-height: 18.75rem;
+  background-color: #333;
+  padding: 3rem;
+  padding-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.button {
+  background-color: white;
+  height: 2rem;
+  color: teal;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+
+  .id::before {
+    content: 'Commande ID : ';
+    font-weight: 500;
+  }
+
+  .name::before {
+    content: 'Client ID : ';
+    font-weight: 500;
+  }
+
+  .adress::before {
+    content: 'adresse : ';
+    font-weight: 500;
+  }
+
+  .total::before {
+    content: 'Total : ';
+    font-weight: 500;
+  }
+
+  .row:last-child {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .done,
+  .undone,
+  .inProgress {
+    margin-bottom: 1.25rem;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}

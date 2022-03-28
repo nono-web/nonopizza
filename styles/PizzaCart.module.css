@@ -1,0 +1,43 @@
+.container {
+    width: 22%;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1,25rem 2rem;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #666
+}
+
+.desc {
+    text-align: center;
+    color: #777
+}
+
+@media screen and (max-width: 480px) {
+        .container {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .price,
+        .desc {
+            font-size: 1.5rem;
+        }
+
+}
